@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     Profile profileFragment = new Profile();
     Resource resourceFragment = new Resource();
 
+    resource2 resource2 = new resource2();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.container, resourceFragment).commit();
                     return true;
+                } else if (id == R.id.resource2) {
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container, resource2).commit();
+                        return true;
                 }else if (id == R.id.chat) {
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.container, aiSupportFragment).commit();

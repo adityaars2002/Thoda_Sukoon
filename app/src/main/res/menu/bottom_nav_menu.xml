@@ -8,6 +8,9 @@
     <item android:id="@+id/resource"
         android:title="Assessments"
         android:icon="@drawable/ic_brain"/>
+    <item android:id="@+id/resource2"
+        android:title="Resources"
+        android:icon="@drawable/ic_resource"/>
     <item android:id="@+id/chat"
         android:title="AI Chat"
         android:icon="@drawable/ic_chat"/>
