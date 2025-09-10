@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Book bookFragment = new Book();
     AiSupport aiSupportFragment = new AiSupport();
     Profile profileFragment = new Profile();
+    Resource resourceFragment = new Resource();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +50,11 @@ public class MainActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.container, bookFragment).commit();
                     return true;
-                } else if (id == R.id.chat) {
+                }else if (id == R.id.resource) {
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.container, resourceFragment).commit();
+                    return true;
+                }else if (id == R.id.chat) {
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.container, aiSupportFragment).commit();
                     return true;
