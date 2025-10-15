@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
-    android:background="#F8F9FA">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                     android:text="Mental Health Screening"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="#000000"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:layout_marginBottom="8dp"/>
 
                 <!-- Description -->
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:text="These standardized assessments help identify potential mental health concerns. Your responses are confidential and can help determine if professional support might be beneficial."
                     android:textSize="14sp"
-                    android:textColor="#555555"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:gravity="center"/>
 
             </LinearLayout>
@@ -95,7 +95,7 @@
                             android:text="PHQ-9 Depression Screening"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:textColor="#000000"/>
+                            android:textColor="?android:attr/textColorPrimary"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -111,7 +111,7 @@
                         android:layout_height="wrap_content"
                         android:text="The Patient Health Questionnaire-9 is a widely used tool for screening and measuring depression severity."
                         android:textSize="14sp"
-                        android:textColor="#555555"
+                        android:textColor="?android:attr/textColorPrimary"
                         android:layout_marginTop="6dp"/>
 
                     <!-- Bullet Points -->
@@ -179,7 +179,7 @@
                             android:text="GAD-7 Anxiety Screening"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:textColor="#000000"/>
+                            android:textColor="?android:attr/textColorPrimary"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -195,7 +195,7 @@
                         android:layout_height="wrap_content"
                         android:text="The Generalized Anxiety Disorder 7-item scale helps identify symptoms of anxiety disorders."
                         android:textSize="14sp"
-                        android:textColor="#555555"
+                        android:textColor="?android:attr/textColorPrimary"
                         android:layout_marginTop="6dp"/>
 
                     <!-- Bullet Points -->

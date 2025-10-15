@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#F5F6FA">
+    android:background="?android:attr/windowBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:layout_marginBottom="12dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp"
-            android:background="@android:color/white">
+            android:background="?attr/colorSurface">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                         android:text="Dr. Sudesh banerjee"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:textColor="@android:color/black" />
+                        android:textColor="?attr/colorOnSurface" />
 
                     <!-- Status -->
                     <TextView
@@ -65,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:text="2024-01-15 at 2:00 PM"
                     android:textSize="14sp"
-                    android:textColor="#666666"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     android:layout_marginTop="4dp" />
 
                 <!-- In-Person Row -->
@@ -80,14 +80,14 @@
                         android:layout_width="18dp"
                         android:layout_height="18dp"
                         android:src="@drawable/ic_person"
-                        app:tint="#666666" />
+                        app:tint="?attr/colorOnSurfaceVariant" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="In-Person"
                         android:textSize="14sp"
-                        android:textColor="#000000"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginStart="8dp" />
                 </LinearLayout>
 
@@ -103,14 +103,14 @@
                         android:layout_width="18dp"
                         android:layout_height="18dp"
                         android:src="@drawable/ic_location"
-                        app:tint="#666666" />
+                        app:tint="?attr/colorOnSurfaceVariant" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Student Counseling Center, Room 201"
                         android:textSize="14sp"
-                        android:textColor="#000000"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginStart="8dp" />
                 </LinearLayout>
 
@@ -128,9 +128,9 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:background="#F5F6FA"
+                        android:background="@drawable/bg_reschedule"
                         android:text="Reschedule"
-                        android:textColor="#2979FF"
+                        android:textColor="?attr/colorPrimary"
                         android:textStyle="bold" />
 
                     <!-- Cancel -->
@@ -140,9 +140,9 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:background="#FFF0F0"
+                        android:background="@drawable/bg_cancel"
                         android:text="Cancel"
-                        android:textColor="#D32F2F"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:layout_marginStart="8dp" />
                 </LinearLayout>

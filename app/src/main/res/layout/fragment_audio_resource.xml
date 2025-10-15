@@ -3,7 +3,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="?attr/colorSurface">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,14 +11,13 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-
         <!-- Card 1 -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             card_view:cardCornerRadius="12dp"
-            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardBackgroundColor="?attr/colorSurfaceVariant"
             card_view:cardElevation="6dp">
 
             <LinearLayout
@@ -31,7 +30,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Relaxing Music for Focus"
-                    android:textColor="#212121"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -39,16 +38,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Audio"
-                    android:textColor="#757575"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     android:paddingTop="4dp" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View"
-                    android:backgroundTint="#9C27B0"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="8dp"/>
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -58,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             card_view:cardCornerRadius="12dp"
-            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardBackgroundColor="?attr/colorSurfaceVariant"
             card_view:cardElevation="6dp">
 
             <LinearLayout
@@ -71,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nature Sounds"
-                    android:textColor="#212121"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -79,16 +78,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Audio"
-                    android:textColor="#757575"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     android:paddingTop="4dp" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View"
-                    android:backgroundTint="#4CAF50"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="8dp"/>
+                    android:backgroundTint="?attr/colorTertiary"
+                    android:textColor="?attr/colorOnTertiary"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -98,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             card_view:cardCornerRadius="12dp"
-            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardBackgroundColor="?attr/colorSurfaceVariant"
             card_view:cardElevation="6dp">
 
             <LinearLayout
@@ -111,7 +110,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ambient Study Music"
-                    android:textColor="#212121"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -119,16 +118,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Audio"
-                    android:textColor="#757575"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     android:paddingTop="4dp" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View"
-                    android:backgroundTint="#03A9F4"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="8dp"/>
+                    android:backgroundTint="?attr/colorSecondary"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -138,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             card_view:cardCornerRadius="12dp"
-            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardBackgroundColor="?attr/colorSurfaceVariant"
             card_view:cardElevation="6dp">
 
             <LinearLayout
@@ -151,7 +150,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Deep Sleep Audio"
-                    android:textColor="#212121"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -159,16 +158,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Audio"
-                    android:textColor="#757575"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     android:paddingTop="4dp" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View"
-                    android:backgroundTint="#2196F3"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="8dp"/>
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

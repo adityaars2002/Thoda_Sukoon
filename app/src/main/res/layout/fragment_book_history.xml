@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#F5F6FA">
+    android:background="?attr/colorSurface">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:layout_marginBottom="12dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp"
-            android:background="@android:color/white">
+            app:cardBackgroundColor="?attr/colorSurfaceVariant">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                         android:layout_height="20dp"
                         android:src="@drawable/ic_check_circle"
                         android:layout_marginEnd="8dp"
-                        app:tint="#4CAF50" />
+                        app:tint="?attr/colorPrimary" />
 
                     <!-- Doctor & Date -->
                     <LinearLayout
@@ -55,14 +55,14 @@
                             android:text="Dr. N. C. Chaterjee"
                             android:textStyle="bold"
                             android:textSize="16sp"
-                            android:textColor="@android:color/black" />
+                            android:textColor="?attr/colorOnSurface" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="2024-01-08 at 10:30 AM"
                             android:textSize="14sp"
-                            android:textColor="#666666"
+                            android:textColor="?attr/colorOnSurfaceVariant"
                             android:layout_marginTop="2dp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -74,9 +74,9 @@
                     android:gravity="center"
                     android:layout_marginTop="12dp"
                     android:padding="10dp"
-                    android:background="#F5F6FA"
+                    android:background="@drawable/bg_feedback"
                     android:text="Leave Feedback"
-                    android:textColor="#2979FF"
+                    android:textColor="?attr/colorPrimary"
                     android:textStyle="bold" />
 
             </LinearLayout>

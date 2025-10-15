@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
     tools:context=".Profile">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/white"
+        android:background="?attr/colorSurface"
         android:padding="16dp">
 
         <LinearLayout
@@ -22,7 +24,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:padding="12dp">
+                android:padding="12dp"
+                android:background="?attr/colorSurface">
 
                 <ImageView
                     android:id="@+id/profile_icon"
@@ -38,6 +41,7 @@
                     android:text="Anonymous User"
                     android:textSize="18sp"
                     android:textStyle="bold"
+                    android:textColor="?attr/colorOnSurface"
                     android:paddingTop="8dp" />
 
                 <TextView
@@ -45,7 +49,7 @@
                     android:layout_height="wrap_content"
                     android:text="Your privacy is protected"
                     android:textSize="14sp"
-                    android:textColor="#808080" />
+                    android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -55,7 +59,7 @@
                     android:layout_marginTop="8dp"
                     android:text="Verified Student"
                     android:textSize="12sp"
-                    android:textColor="#4CAF50" />
+                    android:textColor="?attr/colorPrimary" />
             </LinearLayout>
 
             <!-- Wellness Journey -->
@@ -76,21 +80,24 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_heart" />
+                        android:src="@drawable/ic_heart"
+                        app:tint="?attr/colorPrimary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="12"
                         android:textStyle="bold"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorOnBackground" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sessions\nCompleted"
                         android:textAlignment="center"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:textColor="?attr/colorOnBackground" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -103,20 +110,23 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_calendar" />
+                        android:src="@drawable/ic_calendar"
+                        app:tint="?attr/colorPrimary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="28"
                         android:textStyle="bold"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorOnBackground" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Days Active"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:textColor="?attr/colorOnBackground" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -129,21 +139,24 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_resource" />
+                        android:src="@drawable/ic_resource"
+                        app:tint="?attr/colorPrimary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="8"
                         android:textStyle="bold"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorOnBackground" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Resources\nUsed"
                         android:textAlignment="center"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:textColor="?attr/colorOnBackground" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -159,14 +172,20 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Daily Check-in" />
+                    android:text="Daily Check-in"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:radius="8dp" />
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="View Progress"
-                    android:layout_marginStart="8dp"/>
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:radius="8dp"
+                    android:layout_marginStart="8dp" />
             </LinearLayout>
 
             <!-- Privacy & Safety Section -->
@@ -175,17 +194,20 @@
                 android:layout_height="wrap_content"
                 android:text="Privacy &amp; Safety"
                 android:textStyle="bold"
+                android:textColor="?attr/colorOnBackground"
                 android:layout_marginTop="20dp" />
 
             <Switch
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Anonymous Mode" />
+                android:text="Anonymous Mode"
+                android:textColor="?attr/colorOnBackground" />
 
             <Switch
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Notifications" />
+                android:text="Notifications"
+                android:textColor="?attr/colorOnBackground" />
 
             <!-- Preferences -->
             <TextView
@@ -193,18 +215,21 @@
                 android:layout_height="wrap_content"
                 android:text="Preferences"
                 android:textStyle="bold"
+                android:textColor="?attr/colorOnBackground"
                 android:layout_marginTop="20dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Language"
+                android:textColor="?attr/colorOnBackground"
                 android:padding="12dp" />
 
             <Switch
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dark Mode" />
+                android:text="Dark Mode"
+                android:textColor="?attr/colorOnBackground" />
 
             <!-- Support -->
             <TextView
@@ -212,18 +237,21 @@
                 android:layout_height="wrap_content"
                 android:text="Support"
                 android:textStyle="bold"
+                android:textColor="?attr/colorOnBackground"
                 android:layout_marginTop="20dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Help &amp; FAQ"
+                android:textColor="?attr/colorOnBackground"
                 android:padding="12dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Crisis Resources"
+                android:textColor="?attr/colorOnBackground"
                 android:padding="12dp" />
 
             <!-- Account -->
@@ -232,12 +260,14 @@
                 android:layout_height="wrap_content"
                 android:text="Account"
                 android:textStyle="bold"
+                android:textColor="?attr/colorOnBackground"
                 android:layout_marginTop="20dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Sign Out"
+                android:textColor="?attr/colorOnBackground"
                 android:padding="12dp" />
 
             <!-- Danger Zone -->
@@ -245,34 +275,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="#FFEBEE"
+                android:background="?attr/colorErrorContainer"
                 android:padding="16dp"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:clipToOutline="true">
 
                 <Button
+                    android:id="@+id/btnSignOut"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sign Out"
-                    android:backgroundTint="#D32F2F"
-                    android:textColor="@android:color/white" />
+                    android:backgroundTint="?attr/colorError"
+                    android:textColor="?attr/colorOnError"
+                    android:radius="8dp" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Delete Account"
-                    android:backgroundTint="#D32F2F"
-                    android:textColor="@android:color/white" />
+                    android:backgroundTint="?attr/colorError"
+                    android:textColor="?attr/colorOnError"
+                    android:radius="8dp"
+                    android:layout_marginTop="8dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="This action is permanent and cannot be undone. All your data will be permanently deleted."
                     android:textSize="12sp"
-                    android:textColor="#808080"
-                    android:paddingTop="8dp"/>
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:paddingTop="8dp" />
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
-
 </RelativeLayout>
