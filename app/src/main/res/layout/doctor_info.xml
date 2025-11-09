@@ -22,6 +22,7 @@
             android:gravity="center_vertical">
 
             <TextView
+                android:id="@+id/doctor_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -32,6 +33,7 @@
 
             <!-- Rating -->
             <LinearLayout
+                android:id="@+id/rating_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -44,6 +46,7 @@
                     app:tint="#FFC107" />
 
                 <TextView
+                    android:id="@+id/doctor_rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4.9"
@@ -53,45 +56,55 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Designation -->
+        <!-- Address (replaces Designation) -->
         <TextView
+            android:id="@+id/doctor_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Licensed Clinical Psychologist"
+            android:text="Newtown, Kolkata"
             android:textSize="14sp"
             android:textColor="?android:attr/textColorSecondary"
             android:layout_marginTop="4dp" />
 
         <!-- Tags -->
         <LinearLayout
+            android:id="@+id/tags_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp">
 
             <TextView
+                android:id="@+id/tag1"
                 style="@style/TagStyle"
                 android:text="Anxiety"
                 android:textAlignment="center"
-                android:layout_width="80dp"
+                android:layout_width="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
                 android:layout_height="30dp" />
 
             <TextView
+                android:id="@+id/tag2"
                 style="@style/TagStyle"
                 android:layout_marginStart="8dp"
                 android:text="Depression"
                 android:textAlignment="center"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
                 android:layout_height="30dp" />
         </LinearLayout>
 
-        <!-- Availability -->
+        <!-- Availability (We will hide this for now, as the API doesn't provide it) -->
         <LinearLayout
+            android:id="@+id/availability_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:visibility="gone">
 
             <ImageView
                 android:layout_width="16dp"
@@ -110,6 +123,7 @@
 
         <!-- Book Button -->
         <Button
+            android:id="@+id/book_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Book Session"
