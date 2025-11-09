@@ -85,7 +85,7 @@ public class Register extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     } else if (response.code() == 400) {
-                        Toast.makeText(Register.this, res.message, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Register.this, res.getMessage(), Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(Register.this, res.message, Toast.LENGTH_SHORT).show();
                     }

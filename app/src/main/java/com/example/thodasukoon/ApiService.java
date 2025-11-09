@@ -21,11 +21,8 @@ public interface ApiService {
 
 
     // Get nearby doctors by location
-    @GET("api/appointments/doctors")
-    Call<List<Doctor>> getDoctorsByLocation(
-            @Query("lat") double lat,
-            @Query("lng") double lng
-    );
+    @POST("api/appointments/find")
+    Call<List<Doctor>> getDoctorsByLocation(@Body LocationRequestBody requestBody);
 
     // Get chatbot reply
     @POST("api/chat/message")
