@@ -22,7 +22,7 @@ public interface ApiService {
 
     // Get nearby doctors by location
     @POST("api/appointments/find")
-    Call<List<Doctor>> getDoctorsByLocation(@Body LocationRequestBody requestBody);
+    Call<DoctorResponse> getDoctorsByLocation(@Body LocationRequestBody requestBody);
 
     // Get chatbot reply
     @POST("api/chat/message")

@@ -83,16 +83,27 @@ public class BookSession extends Fragment {
 
 
         // Make the network call
-        Call<List<Doctor>> call = apiService.getDoctorsByLocation(requestBody);
+        // In BookSession.java, inside the getNearbyDoctors method
 
-        call.enqueue(new Callback<List<Doctor>>() {
+// Change the Call type
+        Call<DoctorResponse> call = apiService.getDoctorsByLocation(requestBody);
+
+        call.enqueue(new Callback<DoctorResponse>() { // <-- Change the type here
             @Override
-            public void onResponse(Call<List<Doctor>> call, Response<List<Doctor>> response) {
+            public void onResponse(Call<DoctorResponse> call, Response<DoctorResponse> response) { // <-- And here
                 if (response.isSuccessful() && response.body() != null) {
-                    List<Doctor> doctors = response.body();
-                    // TODO: Update your UI here. For example, display doctors in a RecyclerView.
-                    Toast.makeText(getContext(), "Found " + doctors.size() + " doctors nearby.", Toast.LENGTH_SHORT).show();
-                    Log.d(TAG, "Doctors found: " + doctors.size());
+                    // Get the list of doctors FROM the response object
+                    List<Doctor> doctors = response.body().getDoctors();
+
+                    if (doctors != null) {
+                        // TODO: Update your UI here. For example, display doctors in a RecyclerView.
+                        Toast.makeText(getContext(), "Found " + doctors.size() + " doctors nearby.", Toast.LENGTH_SHORT).show();
+                        Log.d(TAG, "Doctors found: " + doctors.size());
+                    } else {
+                        Toast.makeText(getContext(), "No doctors found in the response.", Toast.LENGTH_SHORT).show();
+                        Log.d(TAG, "Doctors list was null in the response body.");
+                    }
+
                 } else {
                     // Handle API errors (e.g., 404, 500)
                     Toast.makeText(getContext(), "Failed to fetch doctors: " + response.message(), Toast.LENGTH_SHORT).show();
@@ -101,11 +112,12 @@ public class BookSession extends Fragment {
             }
 
             @Override
-            public void onFailure(Call<List<Doctor>> call, Throwable t) {
+            public void onFailure(Call<DoctorResponse> call, Throwable t) { // <-- Change the type here
                 // Handle network failure (e.g., no internet)
                 Toast.makeText(getContext(), "Network Error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
                 Log.e(TAG, "Network Failure", t);
             }
         });
+
     }
 }
