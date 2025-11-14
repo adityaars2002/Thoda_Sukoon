@@ -25,6 +25,6 @@ public interface ApiService {
     Call<DoctorResponse> getDoctorsByLocation(@Body LocationRequestBody requestBody);
 
     // Get chatbot reply
-    @POST("api/chat/message")
+    @POST("api/chat/send")
     Call<ChatResponse> getChatReply(@Body ChatRequest request);
 }
